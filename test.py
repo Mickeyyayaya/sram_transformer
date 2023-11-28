@@ -38,6 +38,7 @@ spade_card = []
 pool_card = np.zeros((4,2))
 pool_card[:, 0] = 999
 
+
 club_pos = []
 diamond_pos = []
 heart_pos = []
@@ -46,7 +47,7 @@ spade_pos = []
 for i in range(52):
     if i <= 12:
         loc = check_card('C:/Users/mickey/sram_transformer/result2.png',f'C:/Users/mickey/sram_transformer/card_new/club_{i+1}.png',0.98)
-        loc2 = check_card('C:/Users/mickey/sram_transformer/result3.png',f'C:/Users/mickey/sram_transformer/card_new/club_{i+1}.png',0.9)
+        loc2 = check_card('C:/Users/mickey/sram_transformer/result.png',f'C:/Users/mickey/sram_transformer/card_new/club_{i+1}.png',0.87)
         if loc != None:
             club_card.append(i+1)
             club_pos.append(loc)
@@ -57,7 +58,7 @@ for i in range(52):
                 pool_card[0][1] = i+1
     elif i > 12 and i <=25:
         loc = check_card('C:/Users/mickey/sram_transformer/result2.png',f'C:/Users/mickey/sram_transformer/card_new/diamond_{i-12}.png',0.98)
-        loc2 = check_card('C:/Users/mickey/sram_transformer/result3.png',f'C:/Users/mickey/sram_transformer/card_new/diamond_{i-12}.png',0.9)
+        loc2 = check_card('C:/Users/mickey/sram_transformer/result.png',f'C:/Users/mickey/sram_transformer/card_new/diamond_{i-12}.png',0.87)
         if loc != None:
             diamond_card.append(i-12)
             diamond_pos.append(loc)
@@ -68,7 +69,7 @@ for i in range(52):
                 pool_card[1][1] = i-12
     elif i > 25 and i <= 38:
         loc = check_card('C:/Users/mickey/sram_transformer/result2.png',f'C:/Users/mickey/sram_transformer/card_new/heart_{i-25}.png',0.98)
-        loc2 = check_card('C:/Users/mickey/sram_transformer/result3.png',f'C:/Users/mickey/sram_transformer/card_new/heart_{i-25}.png',0.9)
+        loc2 = check_card('C:/Users/mickey/sram_transformer/result.png',f'C:/Users/mickey/sram_transformer/card_new/heart_{i-25}.png',0.87)
         if loc != None:
             heart_card.append(i-25)
             heart_pos.append(loc)
@@ -79,7 +80,7 @@ for i in range(52):
                 pool_card[2][1] = i-25
     elif i > 38 and i <= 51:
         loc = check_card('C:/Users/mickey/sram_transformer/result2.png',f'C:/Users/mickey/sram_transformer/card_new/spade_{i-38}.png',0.98)
-        loc2 = check_card('C:/Users/mickey/sram_transformer/result3.png',f'C:/Users/mickey/sram_transformer/card_new/spade_{i-38}.png',0.9)
+        loc2 = check_card('C:/Users/mickey/sram_transformer/result.png',f'C:/Users/mickey/sram_transformer/card_new/spade_{i-38}.png',0.87)
         if loc != None:
             spade_card.append(i-38)
             spade_pos.append(loc)
@@ -89,16 +90,13 @@ for i in range(52):
             if pool_card[3][1] < i-38:
                 pool_card[3][1] = i-38
 
-print(club_card)
-print(club_pos)
-
-print(diamond_card)
-print(diamond_pos)
-
-print(heart_card)
-print(heart_pos)
-
-print(spade_card)
-print(spade_pos)
-
 print(pool_card)
+
+
+#print(diamond_card)
+
+#print(heart_card)
+#print(heart_pos)
+
+#print(spade_card)
+#print(spade_pos)
