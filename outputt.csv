@@ -25,3 +25,6 @@ buffer_size,load_total,clear_total,input_load,input_clear,weight_load,weight_cle
 236544,107550,278,150,4,53700,269,53700,5
 246784,107550,272,150,4,53700,263,53700,5
 257024,107550,263,150,4,53700,254,53700,5
+buffer_size,load_total,clear_total,input_load,input_clear,weight_load,weight_clear,output_load,output_clear
+1024,107550,43822,150,111,53700,43501,53700,210
+11264,107550,4026,150,12,53700,3993,53700,21
